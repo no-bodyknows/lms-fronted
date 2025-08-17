@@ -1,17 +1,18 @@
 import './App.css'
 
-import { Routes } from 'react-router-dom'
-
+import { Routes, Route } from 'react-router-dom';
+import Homepage from './Pages/HomePage.jsx';
 function App() {
 
 
   return (
     <>
       <Routes>
-        {/* <route path ="/" element={<HOme />}></route> */}
+      <Route path ="/" element={<Homepage />}></Route>
       </Routes>
+     
     </>
-  )
+  );
 }
 
-export default App
+export default App;

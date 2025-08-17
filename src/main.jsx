@@ -12,8 +12,8 @@ import App from './App.jsx';
 import store from './Redux/store'
 
 createRoot(document.getElementById('root')).render(
-    <Provider>
-    <BrowserRouter store={store}>
+    <Provider store={store}>
+    <BrowserRouter >
         <App />
         <Toaster/>
     </BrowserRouter>
